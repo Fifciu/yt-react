@@ -1,0 +1,21 @@
+@value desktop from '@/styles/Breakpoints.module.css';
+
+.header {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  background-color: rgba(15, 15, 15, 0.7);
+  backdrop-filter: blur(24px);
+}
+
+.searchIconWrapper {
+  padding: 12px 0;
+}
+
+@media (desktop) {
+  .header {
+    height: 56px;
+  }
+}

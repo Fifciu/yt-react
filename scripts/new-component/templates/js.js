@@ -1,5 +1,5 @@
 import React from 'react';
-import './STYLESHEET.module.css'
+import classes from "./STYLESHEET.module.css";
 
 function COMPONENT_NAME() {
   return <div></div>;

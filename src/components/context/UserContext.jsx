@@ -7,10 +7,11 @@ import { OAuthContext } from './OAuthContext';
 import { useQuery } from '@tanstack/react-query';
 import { axios } from '../../axios';
 
-const UserContext = React.createContext();
+export const UserContext = React.createContext();
 
 export default function UserContextProvider({ children }) {
   const accessToken = React.useContext(OAuthContext);
+  const navigate = useNavigate();
   const { status, data, error } = useQuery({
     queryKey: ['user'],
     queryFn: async () => {
@@ -26,9 +27,13 @@ export default function UserContextProvider({ children }) {
     return <span>Error: {error.message}</span>
   }
 
+  const userData = JSON.parse(data.data);
+  if (userData?.error) {
+    navigate('/');
+  }
+
   return (
-    <UserContext.Provider value={accessToken}>
-      <div>{JSON.stringify(data)}</div>
+    <UserContext.Provider value={userData}>
       {children}
     </UserContext.Provider>
   );

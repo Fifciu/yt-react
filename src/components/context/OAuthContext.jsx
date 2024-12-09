@@ -10,7 +10,7 @@ export default function OAuthContextProvider({ children }) {
   const oauthData = window.localStorage.getItem(LS_OAUTH_DATA);
   const params = new URLSearchParams(oauthData);
   const at = params.get('access_token');
-  const [accessToken, setAccessToken] = useState(at);
+  const [accessToken, ] = useState(at);
 
   return (
     <OAuthContext.Provider value={accessToken}>

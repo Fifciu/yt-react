@@ -5,7 +5,7 @@ function UserHome() {
   return (
     <>
       <div>
-        mamy to!
+        HOME
       </div>
     </>
   )

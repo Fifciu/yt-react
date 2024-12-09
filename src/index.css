@@ -1,16 +1,158 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  font-size: 10px;
+  font-family: Roboto, Arial, sans-serif;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --yt-spec-text-primary: #f1f1f1;
+  --yt-spec-text-primary-inverse: #0f0f0f;
+  --yt-spec-error-indicator: #f57;
+  --yt-spec-wordmark-text: #fff;
+  --yt-spec-icon-inactive: #fff;
+  --yt-spec-icon-disabled: #717171;
+  --yt-spec-brand-icon-inactive: #fff;
+  --primary-text-color: var(--light-theme-text-color);
+  --primary-background-color: var(--light-theme-background-color);
+  --secondary-text-color: var(--light-theme-secondary-color);
+  --disabled-text-color: var(--light-theme-disabled-color);
+  --divider-color: var(--light-theme-divider-color);
+  --error-color: #dd2c00;
+  --primary-color: #3f51b5;
+  --light-primary-color: #c5cae9;
+  --dark-primary-color: #303f9f;
+  --accent-color: #ff4081;
+  --light-accent-color: #ff80ab;
+  --dark-accent-color: #f50057;
+  --light-theme-background-color: #fff;
+  --light-theme-base-color: #000;
+  --light-theme-text-color: #212121;
+  --light-theme-secondary-color: #737373;
+  --light-theme-disabled-color: #9b9b9b;
+  --light-theme-divider-color: #dbdbdb;
+  --dark-theme-background-color: #212121;
+  --dark-theme-base-color: #fff;
+  --dark-theme-text-color: #fff;
+  --dark-theme-secondary-color: #bcbcbc;
+  --dark-theme-disabled-color: #646464;
+  --dark-theme-divider-color: #3c3c3c;
+  --text-primary-color: var(--dark-theme-text-color);
+  --default-primary-color: var(--primary-color);
+  --yt-spec-base-background: #0f0f0f;
+  --yt-spec-raised-background: #212121;
+  --yt-spec-menu-background: #282828;
+  --yt-spec-inverted-background: #f1f1f1;
+  --yt-spec-additive-background: rgba(255, 255, 255, 0.1);
+  --yt-spec-outline: rgba(255, 255, 255, 0.2);
+  --yt-spec-outline-inverse: rgba(0, 0, 0, 0.1);
+  --yt-spec-outline-inverse-medium: rgba(0, 0, 0, 0.3);
+  --yt-spec-shadow: rgba(0, 0, 0, 0.25);
+  /* --yt-spec-text-primary: #fff; */
+  --yt-spec-text-secondary: #aaa;
+  --yt-spec-text-disabled: #717171;
+  /* --yt-spec-text-primary-inverse: #030303; */
+  --yt-spec-call-to-action: #3ea6ff;
+  --yt-spec-call-to-action-inverse: #065fd4;
+  --yt-spec-suggested-action: #263850;
+  --yt-spec-suggested-action-inverse: #def1ff;
+  --yt-spec-icon-active-other: #fff;
+  --yt-spec-icon-inactive: #909090;
+  --yt-spec-icon-disabled: #606060;
+  --yt-spec-button-chip-background-hover: rgba(255, 255, 255, 0.2);
+  --yt-spec-touch-response: #fff;
+  --yt-spec-touch-response-inverse: #000;
+  --yt-spec-brand-icon-active: #fff;
+  --yt-spec-brand-icon-inactive: #909090;
+  --yt-spec-red-indicator: #e1002d;
+  --yt-spec-wordmark-text: #fff;
+  --yt-spec-error-indicator: #ff8983;
+  --yt-spec-error-background-red: rgba(255, 85, 119, 0.2);
+  --yt-spec-themed-blue: #3ea6ff;
+  --yt-spec-themed-green: #2ba640;
+  --yt-spec-ad-indicator: #00aaa7;
+  --yt-spec-themed-overlay-background: rgba(0, 0, 0, 0.8);
+  --yt-spec-commerce-badge-background: #002d08;
+  --yt-spec-static-white-background: #fff;
+  --yt-spec-static-black: #0f0f0f;
+  --yt-spec-static-brand-red: #f00;
+  --yt-spec-static-brand-white: #fff;
+  --yt-spec-static-brand-black: #212121;
+  --yt-spec-static-clear-color: rgba(255, 255, 255, 0);
+  --yt-spec-static-clear-black: rgba(0, 0, 0, 0);
+  --yt-spec-static-ad-yellow: #fbc02d;
+  --yt-spec-static-grey: #606060;
+  --yt-spec-brand-red-contrast: #f57;
+  --yt-spec-static-overlay-additive-background: rgba(40, 40, 40, 0.6);
+  --yt-spec-static-overlay-background-solid: #000;
+  --yt-spec-static-overlay-background-heavy: rgba(0, 0, 0, 0.8);
+  --yt-spec-static-overlay-background-medium: rgba(0, 0, 0, 0.6);
+  --yt-spec-static-overlay-background-medium-light: rgba(0, 0, 0, 0.3);
+  --yt-spec-static-overlay-background-light: rgba(0, 0, 0, 0.1);
+  --yt-spec-static-overlay-text-primary: #fff;
+  --yt-spec-static-overlay-text-primary-inverse: #030303;
+  --yt-spec-static-overlay-text-secondary: rgba(255, 255, 255, 0.7);
+  --yt-spec-static-overlay-text-disabled: rgba(255, 255, 255, 0.3);
+  --yt-spec-static-overlay-call-to-action: #3ea6ff;
+  --yt-spec-static-overlay-call-to-action-hover: #65b8ff;
+  --yt-spec-static-overlay-icon-active-other: #fff;
+  --yt-spec-static-overlay-icon-inactive: rgba(255, 255, 255, 0.7);
+  --yt-spec-static-overlay-icon-disabled: rgba(255, 255, 255, 0.3);
+  --yt-spec-static-overlay-button-primary: rgba(255, 255, 255, 0.3);
+  --yt-spec-static-overlay-button-secondary: rgba(255, 255, 255, 0.1);
+  --yt-spec-static-overlay-touch-response: #fff;
+  --yt-spec-static-overlay-touch-response-inverse: #000;
+  --yt-spec-static-overlay-background-brand: rgba(204, 0, 0, 0.9);
+  --yt-spec-assistive-feed-themed-gradient-1: #005446;
+  --yt-spec-assistive-feed-themed-gradient-2: #39003f;
+  --yt-spec-assistive-feed-themed-gradient-3: #590000;
+  --yt-spec-gen-ai-gradient-1: #007a65;
+  --yt-spec-gen-ai-gradient-2: #7f0e7f;
+  --yt-spec-gen-ai-gradient-3: #aa09aa;
+  --yt-spec-gen-ai-gradient-4: #ff4e45;
+  --yt-spec-gen-ai-additive-gradient-1: rgba(0, 122, 101, 0.3);
+  --yt-spec-gen-ai-additive-gradient-2: rgba(127, 14, 127, 0.3);
+  --yt-spec-gen-ai-additive-gradient-3: rgba(170, 9, 170, 0.3);
+  --yt-spec-gen-ai-additive-gradient-4: rgba(255, 78, 69, 0.3);
+  --yt-spec-discover-red: #ff4e45;
+  --yt-spec-discover-green: #a4ffa4;
+  --yt-spec-discover-blue: #6ea2ff;
+  --yt-frosted-glass-mobile: rgba(15, 15, 15, 0.7);
+  --yt-frosted-glass-desktop: rgba(15, 15, 15, 0.8);
+  --yt-spec-brand-background-solid: #212121;
+  --yt-spec-brand-background-primary: rgba(33, 33, 33, 0.98);
+  --yt-spec-brand-background-secondary: rgba(33, 33, 33, 0.95);
+  --yt-spec-general-background-a: #181818;
+  --yt-spec-general-background-b: #0f0f0f;
+  --yt-spec-general-background-c: #030303;
+  --yt-spec-error-background: #f9f9f9;
+  --yt-spec-10-percent-layer: rgba(255, 255, 255, 0.1);
+  --yt-spec-10-percent-layer-inverse: rgba(0, 0, 0, 0.1);
+  --yt-spec-snackbar-background: #030303;
+  --yt-spec-snackbar-background-updated: #f9f9f9;
+  --yt-spec-badge-chip-background: rgba(255, 255, 255, 0.1);
+  --yt-spec-badge-chip-background-inverse: rgba(0, 0, 0, 0.05);
+  --yt-spec-verified-badge-background: rgba(255, 255, 255, 0.25);
+  --yt-spec-brand-button-background: #c00;
+  --yt-spec-brand-link-text: #ff4e45;
+  --yt-spec-brand-link-text-faded: rgba(255, 78, 69, 0.3);
+  --yt-spec-call-to-action-faded: rgba(62, 166, 255, 0.3);
+  --yt-spec-call-to-action-hover: #6ebcff;
+  --yt-spec-brand-button-background-hover: #990412;
+  --yt-spec-filled-button-focus-outline: rgba(255, 255, 255, 0.7);
+  --yt-spec-static-overlay-button-hover: rgba(255, 255, 255, 0.5);
+  --yt-spec-mono-filled-hover: #d9d9d9;
+  --yt-spec-mono-filled-hover-inverse: #272727;
+  --yt-spec-commerce-filled-hover: #65b8ff;
+  --yt-spec-mono-tonal-hover: rgba(255, 255, 255, 0.2);
+  --yt-spec-mono-tonal-hover-inverse: rgba(0, 0, 0, 0.1);
+  --yt-spec-commerce-tonal-hover: #515561;
+  --yt-spec-static-overlay-filled-hover: #e6e6e6;
+  --yt-spec-static-overlay-tonal-hover: rgba(255, 255, 255, 0.2);
+  --yt-spec-paper-tab-ink: rgba(255, 255, 255, 0.3);
+  --yt-spec-filled-button-text: #030303;
+  --yt-spec-selected-nav-text: #fff;
 }
 
 a {
@@ -24,45 +166,11 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
   min-height: 100vh;
+  /* background: var(--yt-spec-base-background); */
+  background-image: url('https://i0.wp.com/picjumbo.com/wp-content/uploads/gorgeous-sunset-over-the-sea-free-image.jpeg?h=800&quality=80');
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+p {
+  margin: 0;
 }

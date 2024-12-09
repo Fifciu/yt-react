@@ -1,0 +1,15 @@
+.headerWrapper {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.toolbarWrapper {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.routeWrapper {
+  padding-top: 45px;
+}

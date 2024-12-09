@@ -1,6 +1,6 @@
 import reactLogo from '../assets/react.svg'
 import viteLogo from '/vite.svg'
-import './GuestHome.css'
+// import './GuestHome.css'
 
 function GuestHome() {
   function redirectToGoogleOauth() {

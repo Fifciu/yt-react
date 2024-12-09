@@ -1,0 +1,14 @@
+.toolbar {
+  height: 57px;
+  background-color: rgba(15, 15, 15, 0.7);
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+  color: var(--yt-spec-text-primary);
+  border-top: 1px solid rgba(255, 255, 255, .2);
+  font-size: 1.1rem;
+
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: stretch;
+}
