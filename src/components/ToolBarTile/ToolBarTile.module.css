@@ -16,6 +16,11 @@
   align-items: center;
 }
 
+.labelWrapperAvatar {
+  gap: 2px;
+  margin-bottom: 2px;
+}
+
 .label {
   color: var(--yt-spec-text-primary);
   font-weight: 400;
@@ -25,4 +30,8 @@
   width: 24px;
   height: 24px;
   color: var(--yt-spec-text-primary);
+}
+
+.iconAvatar {
+  margin-bottom: 1px;
 }

@@ -1,12 +1,12 @@
-# React + Vite
+# YT-React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Clone of YouTube's frontend in React, for learning purpose.
 
-Currently, two official plugins are available:
+## Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
+1. Clone repo.
+2. Install dependencies using pnpm.
+3. Set up envs using Google Client ID of your project with unlocked http://localhost:5173 URI, http://localhost:5173/oauthCallback , YouTube Data API v3.
 
 ## Goals
 

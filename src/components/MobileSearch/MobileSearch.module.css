@@ -1,0 +1,67 @@
+@value desktop from '@/styles/Breakpoints.module.css';
+
+.search {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 12px;
+  background-color: var(--dark-theme-background-color);
+  backdrop-filter: blur(24px);
+  color: var(--yt-spec-text-primary);
+}
+
+.searchWrapper {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  input, button {
+    height: 100%;
+  }
+
+  input {
+    border: none;
+    border-radius: 32px 0 0 32px;
+    border-right: 0;
+    background-color: rgba(255, 255, 255, .1);
+    padding-left: 12px;
+    color: var(--yt-spec-text-primary);
+    flex: 1;
+
+    font: 15px / 22px Roboto, Arial, sans-serif;
+    font-weight: 400px;
+  }
+
+  input::placeholder {
+    font-family: Arial;
+    color: rgb(170, 170, 170);
+    font-size: 15px
+  }
+
+  button {
+    background-color: rgba(255, 255, 255, .1);
+    color: var(--yt-spec-text-primary);
+    padding-right: 12px;
+    border-radius: 0 32px 32px 0;
+    span {
+      display: block;
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.searchCloseBtn {
+  color: var(--yt-spec-text-primary);
+  background-color: transparent;
+}
+
+@media (desktop) {
+  .header {
+    display: none;
+  }
+}

@@ -4,6 +4,7 @@ import UserContextProvider from '../components/context/UserContext';
 import Header from '@/components/Header';
 import ToolBar from '@/components/ToolBar';
 import classes from './AuthLayout.module.css';
+import MobileSearch from '../components/MobileSearch/MobileSearch';
 
 const HIDE_TOOLBAR_ROUTES = [
   '/app/shorts'
@@ -19,6 +20,7 @@ function AuthLayout() {
         <UserContextProvider>
           <div className={classes.headerWrapper}>
             <Header></Header>
+            <MobileSearch></MobileSearch>
           </div>
           <div className={classes.routeWrapper}>
             <Outlet />

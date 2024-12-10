@@ -17,7 +17,7 @@ function ToolBar() {
       <ToolBarTile href="/app" iconActive={<HomeIcon isActive={true}/>} iconInactive={<HomeIcon />}>Home</ToolBarTile>
       <ToolBarTile href="/app/shorts" iconActive={<ShortsIcon />} iconInactive={<ShortsIcon />}>Shorts</ToolBarTile>
       <ToolBarTile href="/app/subscriptions" iconActive={<SubscriptionsIcon isActive={true} />} iconInactive={<SubscriptionsIcon />}>Subscriptions</ToolBarTile>
-      <ToolBarTile href="/app/me" iconActive={<ProfileIcon isActive={true} photoSrc={userAvatar} />} iconInactive={<ProfileIcon photoSrc={userAvatar} />}>Me</ToolBarTile>
+      <ToolBarTile href="/app/me" isAvatar={true}iconActive={<ProfileIcon isActive={true} photoSrc={userAvatar} />} iconInactive={<ProfileIcon photoSrc={userAvatar} />}>Me</ToolBarTile>
     </div>
   );
 }
