@@ -1,0 +1,11 @@
+@value desktop from '@/styles/Breakpoints.module.css';
+
+.desktopSearch {
+  display: none;
+}
+
+@media (desktop) {
+  .desktopSearch {
+    display: flex;
+  }
+}

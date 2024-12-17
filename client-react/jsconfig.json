@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "checkJs": true,
+    "allowJs": true,
+    "baseUrl": ".",
+    "jsx": "react"
+  },
+  "typeAcquisition": {
+    "include": ["dom-speech-recognition"]
+  },
+  "exclude": ["node_modules"]
+}

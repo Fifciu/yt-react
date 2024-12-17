@@ -1,7 +1,7 @@
 :root {
   font-size: 10px;
-  font-family: Roboto, Arial, sans-serif;
-
+  font-family: "Roboto Flex Variable", Arial, sans-serif;
+  
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -167,8 +167,8 @@ a:hover {
 body {
   margin: 0;
   min-height: 100vh;
-  /* background: var(--yt-spec-base-background); */
-  background-image: url('https://i0.wp.com/picjumbo.com/wp-content/uploads/gorgeous-sunset-over-the-sea-free-image.jpeg?h=800&quality=80');
+  background-color: var(--yt-spec-base-background);
+  /* background-image: url('https://i0.wp.com/picjumbo.com/wp-content/uploads/gorgeous-sunset-over-the-sea-free-image.jpeg?h=800&quality=80'); */
 }
 
 /* 1. Use a more-intuitive box-sizing model */
@@ -223,4 +223,5 @@ button {
   margin: 0;
   padding: 0;
   border: none;
+  background: transparent;
 }
